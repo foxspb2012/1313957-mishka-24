@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Евгений Потапов](https://up.htmlacademy.ru/adaptive/24/user/1313957).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
