@@ -1,0 +1,20 @@
+.video {
+  padding-top: 20px;
+  border: 1px solid $border-color-gray;
+
+  &__header {
+    margin-top: 4px;
+    margin-bottom: 24px;
+  }
+
+  &__content-desc {
+    padding: 35px 34px 33px;
+
+    p {
+      font-family: $font-family-normal;
+      font-weight: normal;
+      font-size: 13px;
+      margin: 13px 0;
+    }
+  }
+}

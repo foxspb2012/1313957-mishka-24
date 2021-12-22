@@ -1,0 +1,15 @@
+.popup {
+  outline: 3px solid rgba(180, 120, 50, 0.8);
+  outline-offset: -5px;
+
+  &__legend {
+    font-family: $font-family-normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: $font-color-button;
+  }
+
+  &__list {
+    @include reset-list;
+  }
+}

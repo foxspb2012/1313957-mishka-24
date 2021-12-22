@@ -1,0 +1,46 @@
+.form {
+  padding-top: 22px;
+  padding-bottom: 55px;
+
+  &__desc {
+    font-family: $font-family-normal;
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  &__list {
+    @include reset-list;
+  }
+
+  &__label {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  &__input-text,
+  &__input-contacts,
+  &__textarea {
+    &::placeholder {
+      font-family: $font-family-normal;
+      font-size: 19px;
+      font-weight: normal;
+      line-height: 18px;
+      color: $placeholder-color;
+    }
+  }
+
+  &__label,
+  &__legend {
+    &--title {
+      text-transform: uppercase;
+      line-height: 16px;
+      color: $light-green-color;
+    }
+  }
+
+  &__notification {
+    font-family: $font-family-normal;
+    font-weight: normal;
+    color: $font-color-button;
+  }
+}

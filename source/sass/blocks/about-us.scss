@@ -1,0 +1,10 @@
+.about-us {
+  &__header {
+    margin-top: 31px;
+  }
+
+  &__list {
+    @include reset-list;
+    line-height: 20px;
+  }
+}

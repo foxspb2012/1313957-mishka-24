@@ -1,0 +1,10 @@
+.main {
+  outline: 3px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+
+  &__header {
+    padding-top: 71px;
+    padding-bottom: 76px;
+    background-color: $bg-color-grey;
+  }
+}

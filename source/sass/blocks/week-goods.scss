@@ -1,0 +1,38 @@
+.week-goods {
+  padding-top: 24px;
+
+  &__header {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  &__feature {
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $light-green-color;
+  }
+
+  &__desc {
+    font-family: $font-family-normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  &__list {
+    line-height: 20px;
+  }
+
+  &__to-order p {
+    color: $font-color-button;
+  }
+
+  &__img {
+    margin: 0 auto;
+    width: 260px;
+    height: 315px;
+    overflow: hidden;
+    background-color: $bg-color-image;
+  }
+}

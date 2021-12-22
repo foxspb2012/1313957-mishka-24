@@ -1,0 +1,19 @@
+.promo-list {
+  &__item {
+    padding: 28px 160px 28px 30px;
+
+    &--interior {
+      background-color: $light-green-color;
+    }
+
+    &--toys {
+      background-color: $deep-green-color;
+    }
+  }
+
+  &__item a {
+    font-size: 19px;
+    line-height: 24px;
+    color: $font-color-white;
+  }
+}

@@ -1,0 +1,22 @@
+.promo {
+  &__header {
+    margin-top: 0;
+    margin-bottom: 120px;
+    padding: 0 30px;
+  }
+
+  &__list {
+    @include reset-list;
+    width: 100%;
+  }
+
+  &__content-wrapper {
+    min-height: 489px;
+    padding: 73px 0 0;
+    background-image: url("../img/hero-mobile.jpg");
+    background-color: $bg-color-image;
+    background-size: 568px 373px;
+    background-position: center -15%;
+    background-repeat: no-repeat;
+  }
+}

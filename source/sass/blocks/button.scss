@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  padding: 14px 10px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 260px;
+  border: 2px solid $font-color-button;
+  font: inherit;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 20px;
+  color: $font-color-button;
+  background-color: $bg-color-body;
+  cursor: pointer;
+
+  &--popup {
+    border: none;
+    color: $bg-color-body;
+    background-color: $light-green-color;
+    line-height: 16px;
+  }
+}
