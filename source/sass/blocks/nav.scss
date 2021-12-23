@@ -1,9 +1,7 @@
-.nav {
-  &__list {
-    @include reset-list;
-  }
+.nav__list {
+  @include reset-list;
+}
 
-  &__list li {
-    padding: 28px 30px 28px 74px;
-  }
+.nav__list li {
+  padding: 28px 30px 28px 74px;
 }

@@ -1,10 +1,11 @@
-.about-us {
-  &__header {
-    margin-top: 31px;
-  }
+// stylelint-disable
+@use "sass:math";
 
-  &__list {
-    @include reset-list;
-    line-height: 20px;
-  }
+.about-us__header {
+  margin-top: 31px;
+}
+
+.about-us__list {
+  @include reset-list;
+  line-height: math.div(20, 17);
 }

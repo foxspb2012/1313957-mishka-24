@@ -1,7 +1,7 @@
-.card-product {
-  &__desc {
-    font-family: $font-family-normal;
-    font-size: 15px;
-    line-height: 30px;
-  }
+// stylelint-disable
+@use "sass:math";
+
+.card-product__desc {
+  font-size: 15px;
+  line-height: math.div(30, 15);
 }

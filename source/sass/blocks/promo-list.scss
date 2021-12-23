@@ -1,19 +1,20 @@
-.promo-list {
-  &__item {
-    padding: 28px 160px 28px 30px;
+// stylelint-disable
+@use "sass:math";
 
-    &--interior {
-      background-color: $light-green-color;
-    }
+.promo-list__item {
+  padding: 28px 160px 28px 30px;
 
-    &--toys {
-      background-color: $deep-green-color;
-    }
+  &--interior {
+    background-color: $light-green-color;
   }
 
-  &__item a {
-    font-size: 19px;
-    line-height: 24px;
-    color: $font-color-white;
+  &--toys {
+    background-color: $deep-green-color;
   }
+}
+
+.promo-list__item a {
+  font-size: 19px;
+  line-height: math.div(24, 19);
+  color: $font-color-white;
 }

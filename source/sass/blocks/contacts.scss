@@ -1,20 +1,19 @@
 .contacts {
   padding: 38px 0;
+}
 
-  &__header {
-    margin-bottom: 28px;
-  }
+.contacts__header {
+  margin-bottom: 28px;
+}
 
-  &__table {
-    font-family: "Open Sans", serif;
-    font-weight: normal;
-    font-size: 14px;
-    color: $font-color-button;
-    margin-bottom: 62px;
-  }
+.contacts__table {
+  font-weight: 400;
+  font-size: 14px;
+  color: $font-color-button;
+  margin-bottom: 62px;
+}
 
-  &__map {
-    background-color: $bg-color-image;
-    margin-bottom: 42px;
-  }
+.contacts__map {
+  background-color: $bg-color-image;
+  margin-bottom: 42px;
 }

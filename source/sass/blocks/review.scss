@@ -1,30 +1,29 @@
+// stylelint-disable
+@use "sass:math";
+
 .review {
   margin-bottom: 45px;
+}
 
-  &__header {
-    margin-bottom: 14px;
-  }
+.review__header {
+  margin-bottom: 14px;
+}
 
-  &__text {
-    margin-bottom: 33px;
-    font-family: $font-family-normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 30px;
-    color: $font-color-button;
-  }
+.review__text {
+  margin-bottom: 33px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: math.div(30, 15);
+  color: $font-color-button;
+}
 
-  &__author {
-    line-height: 30px;
+.review__author p {
+  margin: 0;
+  line-height: math.div(24, 17);
+}
 
-    p {
-      margin: 0;
-    }
-
-    span {
-      font-family: $font-family-normal;
-      font-weight: normal;
-      color: $font-color-button;
-    }
-  }
+.review__author span {
+  font-weight: 400;
+  line-height: math.div(30, 17);
+  color: $font-color-button;
 }

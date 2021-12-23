@@ -1,46 +1,46 @@
+// stylelint-disable
+@use "sass:math";
+
 .form {
   padding-top: 22px;
   padding-bottom: 55px;
+}
 
-  &__desc {
-    font-family: $font-family-normal;
-    font-weight: normal;
-    font-size: 13px;
-  }
+.form__desc {
+  font-weight: 400;
+  font-size: 13px;
+}
 
-  &__list {
-    @include reset-list;
-  }
+.form__list {
+  @include reset-list;
+}
 
-  &__label {
+.form__label {
+  font-size: 19px;
+  line-height: 18px;
+}
+
+.form__textarea,
+.form__input-text,
+.form__input-contacts {
+  &::placeholder {
     font-size: 19px;
-    line-height: 18px;
+    font-weight: 400;
+    line-height: math.div(18, 19);
+    color: $placeholder-color;
   }
+}
 
-  &__input-text,
-  &__input-contacts,
-  &__textarea {
-    &::placeholder {
-      font-family: $font-family-normal;
-      font-size: 19px;
-      font-weight: normal;
-      line-height: 18px;
-      color: $placeholder-color;
-    }
+.form__label,
+.form__legend {
+  &--title {
+    text-transform: uppercase;
+    line-height: math.div(16, 17);
+    color: $light-green-color;
   }
+}
 
-  &__label,
-  &__legend {
-    &--title {
-      text-transform: uppercase;
-      line-height: 16px;
-      color: $light-green-color;
-    }
-  }
-
-  &__notification {
-    font-family: $font-family-normal;
-    font-weight: normal;
-    color: $font-color-button;
-  }
+.form__notification {
+  font-weight: 400;
+  color: $font-color-button;
 }

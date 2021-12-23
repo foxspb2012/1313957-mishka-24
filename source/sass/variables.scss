@@ -1,22 +1,32 @@
 // Template width
 $mobile-width: 320px;
 
-// Template fonts
-$font-family-bold: "Open Sans Bold", "Verdana", sans-serif;
-$font-family-normal: "Open Sans", "Verdana", sans-serif;
-$font-size-base: 17px;
-$line-height-base: 24px;
+// Template colors
+$color-white: #ffffff;
+$gray-lightness: #f1f1f1;
+$gray-light: #ececec;
+$gray: #e5e5e5;
+$gray-semi: #b3b3b3;
+$gray-dark: #444444;
+$gray-darken: #231f20;
+$color-black: #000000;
 
+// Main colors
+$main-color: #63d1bb;
+$main-light: #62d1ba;
+$main-lightness: #56c3b2;
+$main-semi: #6bc6b3;
+$main-dark: #149080;
 
 // Template colors
-$bg-color-body: #ffffff;
-$bg-color-image: #f9f9f9;
-$bg-color-grey: #f1f1f1;
-$font-color-base: #000000;
-$font-color-button: #444444;
-$font-color-white: #ffffff;
-$light-green-color: #63d1bb;
-$deep-green-color: #56c3b2;
-$border-color-gray: #ececec;
-$placeholder-color: #b3b3b3;
+$bg-color-body: $color-white;
+$bg-color-image: $gray-semi;
+$bg-color-grey: $gray-lightness;
+$font-color-base: $color-black;
+$font-color-button: $gray-dark;
+$font-color-white: $color-white;
+$light-green-color: $main-color;
+$deep-green-color: $main-lightness;
+$border-color-gray: $gray-light;
+$placeholder-color: $gray-semi;
 

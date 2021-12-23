@@ -1,14 +1,12 @@
-@import "normalize.scss";
 @import "variables.scss";
-@import "fonts";
-@import "mixin";
+@import "fonts.scss";
+@import "mixin.scss";
 @import "scaffolding.scss";
-@import "blocks/content-wrapper.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/wrapper";
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
-@import "blocks/site-list.scss";
-@import "blocks/user-list.scss";
 @import "blocks/main.scss";
 @import "blocks/section-header.scss";
 @import "blocks/promo.scss";
@@ -18,7 +16,6 @@
 @import "blocks/review.scss";
 @import "blocks/contacts.scss";
 @import "blocks/catalog.scss";
-@import "blocks/catalog-caption.scss";
 @import "blocks/card-product.scss";
 @import "blocks/video.scss";
 @import "blocks/form.scss";

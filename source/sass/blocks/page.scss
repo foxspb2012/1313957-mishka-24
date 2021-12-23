@@ -1,0 +1,17 @@
+// stylelint-disable
+@use "sass:math";
+
+.page {
+  box-sizing: border-box;
+}
+
+.page__body {
+  @include reset;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  line-height: math.div(20, 17);
+  color: $font-color-base;
+  background-color: $bg-color-body;
+}

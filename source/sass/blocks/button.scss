@@ -1,17 +1,18 @@
+// stylelint-disable
+@use "sass:math";
+
 .button {
-  display: block;
   padding: 14px 10px;
   margin: 0 auto;
   width: 100%;
   max-width: 260px;
   border: 2px solid $font-color-button;
   font: inherit;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  line-height: 20px;
+  line-height: math.div(20, 18);
   color: $font-color-button;
   background-color: $bg-color-body;
   cursor: pointer;
@@ -20,6 +21,6 @@
     border: none;
     color: $bg-color-body;
     background-color: $light-green-color;
-    line-height: 16px;
+    line-height: math.div(17, 16);
   }
 }

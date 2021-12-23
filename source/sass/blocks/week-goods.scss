@@ -1,38 +1,41 @@
+// stylelint-disable
+@use "sass:math";
+
 .week-goods {
   padding-top: 24px;
+}
 
-  &__header {
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
+.week-goods__header {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
 
-  &__feature {
-    font-weight: bold;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $light-green-color;
-  }
+.week-goods__feature {
+  line-height: math.div(20, 17);
+  text-transform: uppercase;
+  color: $light-green-color;
+}
 
-  &__desc {
-    font-family: $font-family-normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 24px;
-  }
+.week-goods__desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: math.div(24, 15);
+}
 
-  &__list {
-    line-height: 20px;
-  }
+.week-goods__list {
+  line-height: math.div(20, 15);
+}
 
-  &__to-order p {
-    color: $font-color-button;
-  }
+.week-goods__to-order p {
+  font-size: 20px;
+  line-height: math.div(24, 20);
+  color: $font-color-button;
+}
 
-  &__img {
-    margin: 0 auto;
-    width: 260px;
-    height: 315px;
-    overflow: hidden;
-    background-color: $bg-color-image;
-  }
+.week-goods__img {
+  margin: 0 auto;
+  width: 260px;
+  height: 315px;
+  overflow: hidden;
+  background-color: $bg-color-image;
 }
