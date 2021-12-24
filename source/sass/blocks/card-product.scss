@@ -1,7 +1,16 @@
-// stylelint-disable
-@use "sass:math";
-
 .card-product__desc {
   font-size: 15px;
+  color: $font-color-button;
   line-height: math.div(30, 15);
+}
+
+.card-product__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: math.div(24, 20);
+}
+
+.card-product__price {
+  font-weight: 700;
+  line-height: math.div(24, 17);
 }

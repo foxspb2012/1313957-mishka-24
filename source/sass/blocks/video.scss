@@ -13,7 +13,7 @@
 }
 
 .video__content-desc p {
-  font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: math.div(30, 15);
   margin: 13px 0;
 }

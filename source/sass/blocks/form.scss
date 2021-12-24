@@ -1,14 +1,11 @@
-// stylelint-disable
-@use "sass:math";
-
 .form {
   padding-top: 22px;
   padding-bottom: 55px;
 }
 
 .form__desc {
-  font-weight: 400;
   font-size: 13px;
+  line-height: math.div(24, 13);
 }
 
 .form__list {
@@ -16,17 +13,15 @@
 }
 
 .form__label {
-  font-size: 19px;
-  line-height: 18px;
+  font-weight: 700;
+  line-height: math.div(18, 17);
 }
 
 .form__textarea,
 .form__input-text,
 .form__input-contacts {
   &::placeholder {
-    font-size: 19px;
-    font-weight: 400;
-    line-height: math.div(18, 19);
+    line-height: math.div(18, 17);
     color: $placeholder-color;
   }
 }
@@ -34,6 +29,7 @@
 .form__label,
 .form__legend {
   &--title {
+    font-weight: 700;
     text-transform: uppercase;
     line-height: math.div(16, 17);
     color: $light-green-color;
@@ -41,6 +37,7 @@
 }
 
 .form__notification {
-  font-weight: 400;
+  font-size: 14px;
+  line-height: math.div(16, 14);
   color: $font-color-button;
 }

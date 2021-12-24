@@ -1,11 +1,12 @@
-// stylelint-disable
-@use "sass:math";
-
 .about-us__header {
   margin-top: 31px;
 }
 
 .about-us__list {
   @include reset-list;
-  line-height: math.div(20, 17);
+}
+
+.about-us__item {
+  font-weight: 700;
+  line-height: math.div(20/17);
 }

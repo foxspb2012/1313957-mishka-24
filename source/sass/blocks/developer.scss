@@ -1,9 +1,5 @@
-// stylelint-disable
-@use "sass:math";
-
-.developer {
-  p {
-    font-size: 19px;
-    line-height: math.div(18, 19);
-  }
+.developer p {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18 /19 * 1;
 }

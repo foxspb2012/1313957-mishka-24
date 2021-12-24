@@ -1,14 +1,20 @@
-// stylelint-disable
-@use "sass:math";
-
 .section-header {
   margin-top: 31px;
   margin-bottom: 0;
-  font-size: 27px;
-  line-height: math.div(30, 27);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: math.div(30, 25);
+
+  &--main {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: math.div(30, 27);
+    text-align: center;
+  }
 
   &--popup {
     margin-top: 28px;
     margin-bottom: 14px;
+    text-transform: uppercase;
   }
 }
