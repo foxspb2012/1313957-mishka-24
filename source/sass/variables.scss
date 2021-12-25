@@ -1,0 +1,32 @@
+// Template width
+$mobile-width: 320px;
+
+// Template colors
+$color-white: #ffffff;
+$gray-lightness: #f1f1f1;
+$gray-light: #ececec;
+$gray: #e5e5e5;
+$gray-semi: #b3b3b3;
+$gray-dark: #444444;
+$gray-darken: #231f20;
+$color-black: #000000;
+$color-background: #f9f9f9;
+
+// Main colors
+$main-color: #63d1bb;
+$main-light: #62d1ba;
+$main-lightness: #56c3b2;
+$main-semi: #6bc6b3;
+$main-dark: #149080;
+
+// Colors
+$bg-color-body: $color-white;
+$bg-color-image: $color-background;
+$bg-color-grey: $gray-lightness;
+$font-color-base: $color-black;
+$font-color-button: $gray-dark;
+$font-color-white: $color-white;
+$light-green-color: $main-color;
+$deep-green-color: $main-lightness;
+$border-color-gray: $gray-light;
+$placeholder-color: $gray-semi;

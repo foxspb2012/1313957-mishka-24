@@ -1,0 +1,11 @@
+.catalog {
+  padding: 30px;
+}
+
+.catalog__list {
+  @include reset-list;
+}
+
+.catalog__image {
+  background-color: $bg-color-image;
+}

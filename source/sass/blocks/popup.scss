@@ -1,0 +1,20 @@
+.popup {
+  outline: 3px solid rgba(180, 120, 50, 0.8);
+  outline-offset: -5px;
+}
+
+.popup__form h2 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: math.div(30, 15);
+}
+
+.popup__legend {
+  font-size: 15px;
+  line-height: math.div(30, 15);
+  color: $font-color-button;
+}
+
+.popup__list {
+  @include reset-list;
+}

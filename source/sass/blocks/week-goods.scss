@@ -1,0 +1,38 @@
+.week-goods {
+  padding-top: 24px;
+}
+
+.week-goods__header {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.week-goods__feature {
+  font-weight: 700;
+  line-height: math.div(20, 17);
+  text-transform: uppercase;
+  color: $light-green-color;
+}
+
+.week-goods__desc {
+  font-size: 15px;
+  line-height: math.div(24, 15);
+}
+
+.week-goods__list {
+  line-height: math.div(20, 15);
+}
+
+.week-goods__to-order p {
+  font-size: 20px;
+  line-height: math.div(24, 20);
+  color: $font-color-button;
+}
+
+.week-goods__img {
+  margin: 0 auto;
+  width: 260px;
+  height: 315px;
+  overflow: hidden;
+  background-color: $bg-color-image;
+}

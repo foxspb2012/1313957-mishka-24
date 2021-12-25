@@ -1,0 +1,12 @@
+.nav__wrapper {
+  font-weight: 700;
+}
+
+.nav__list {
+  @include reset-list;
+  font-weight: 700;
+}
+
+.nav__list li {
+  padding: 28px 30px 28px 74px;
+}
