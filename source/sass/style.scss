@@ -1,4 +1,5 @@
-@import "sass-math.scss";
+/* stylelint-disable */
+@use "sass:math";
 @import "variables.scss";
 @import "fonts.scss";
 @import "mixin.scss";
@@ -25,3 +26,4 @@
 @import "blocks/developer.scss";
 @import "blocks/popup.scss";
 @import "blocks/button.scss";
+/* stylelint-enable */
