@@ -87,12 +87,12 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-  margin-bottom: 57px;
-}
+    margin-bottom: 57px;
+  }
 
   @media (min-width: $desktop-width) {
-  margin-bottom: 110px;
-}
+    margin-bottom: 110px;
+  }
 }
 
 .week-goods__list {
@@ -114,20 +114,20 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-  position: absolute;
-  top: 24px;
-  right: 0;
-  margin: 0;
-  width: 333px;
-  height: 404px;
-}
+    position: absolute;
+    top: 24px;
+    right: 0;
+    margin: 0;
+    width: 333px;
+    height: 404px;
+  }
 
   @media (min-width: $desktop-width) {
-  z-index: -1;
-  top: -153px;
-  width: 525px;
-  height: 636px;
-}
+    z-index: -1;
+    top: -153px;
+    width: 525px;
+    height: 636px;
+  }
 }
 
 .week-goods__img {
@@ -140,6 +140,6 @@
 
 .week-goods__button {
   @media (min-width: $desktop-width) {
-  margin: 0;
-}
+    margin: 0;
+  }
 }
