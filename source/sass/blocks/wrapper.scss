@@ -4,4 +4,9 @@
   padding-right: 30px;
   min-width: 320px;
   max-width: 1150px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

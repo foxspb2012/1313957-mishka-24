@@ -1,9 +1,29 @@
 .review {
-  margin-bottom: 45px;
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 50px;
 }
 
 .review__header {
-  margin-bottom: 14px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    margin-bottom: 28px;
+    max-width: 300px;
+  }
+}
+
+.review__content {
+  margin: 0;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  line-height: math.div(30, 17);
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .review__text {
@@ -11,6 +31,17 @@
   font-size: 15px;
   line-height: math.div(30, 15);
   color: $font-color-button;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-bottom: 58px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+    max-width: 790px;
+  }
 }
 
 .review__author p {
@@ -21,4 +52,75 @@
 .review__author span {
   line-height: math.div(30, 17);
   color: $font-color-button;
+}
+
+.review__nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto 38px;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 50px;
+    bottom: 134px;
+    margin: 0;
+    width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 190px;
+  }
+}
+
+.review__nav-button {
+  position: relative;
+  padding: 0;
+  width: 50%;
+  height: 52px;
+  border: 1px solid $color-separate;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
+
+  &--backward {
+    &::after {
+      background-image: url("../img/button-backward.svg");
+    }
+  }
+
+  &--forward {
+    border-width: 1px 1px 1px 0;
+
+    &::after {
+      background-image: url("../img/button-forward.svg");
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: 50px 25px;
+  }
+}
+
+.review__button {
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-right: 0;
+    width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
+  }
 }

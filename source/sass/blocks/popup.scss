@@ -1,6 +1,8 @@
 .popup {
-  outline: 3px solid rgba(180, 120, 50, 0.8);
-  outline-offset: -5px;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: fade($bg-color-body, 90%);
 }
 
 .popup__form h2 {
@@ -16,5 +18,5 @@
 }
 
 .popup__list {
-  @include reset-list;
+  @include list-reset();
 }

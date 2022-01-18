@@ -21,8 +21,12 @@ $main-dark: #149080;
 
 // Colors
 $bg-color-body: $color-white;
+$bg-color-button: $color-white;
+$bg-color-button--hover: $gray-dark;
+$bg-color-button--active: $gray-dark;
 $bg-color-image: $color-background;
 $bg-color-grey: $gray-lightness;
+$bg-color-icon: fade($color-black, 20%);
 $font-color-base: $color-black;
 $font-color-button: $gray-dark;
 $font-color-white: $color-white;
@@ -30,3 +34,16 @@ $light-green-color: $main-color;
 $deep-green-color: $main-lightness;
 $border-color-gray: $gray-light;
 $placeholder-color: $gray-semi;
+$font-color-menu: $color-black;
+$font-color-menu--hover: fade($color-black, 60%);
+$font-color-menu--active: fade($color-black, 30%);
+$color-separate: $gray-light;
+$interior-color: $main-color;
+$interior-color-hover: #59d5bc;
+$toy-color: $main-lightness;
+$toy-color-hover: #46c1ae;
+
+// Viewpoints
+$tablet-width: 770px;
+$desktop-width: 1150px;
+$mobile-width-only: 769px;

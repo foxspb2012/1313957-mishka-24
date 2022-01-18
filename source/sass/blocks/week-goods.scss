@@ -1,10 +1,45 @@
 .week-goods {
+  position: relative;
   padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+}
+
+.week-goods__caption {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 28px;
+    padding: 5px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+  }
 }
 
 .week-goods__header {
   margin-top: 4px;
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    max-width: none;
+  }
 }
 
 .week-goods__feature {
@@ -12,6 +47,38 @@
   line-height: math.div(20, 17);
   text-transform: uppercase;
   color: $light-green-color;
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 0;
+    max-width: 127px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 25px;
+  }
+}
+
+.week-goods__content {
+  position: relative;
+  padding-top: 2px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-right: 378px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+    padding-right: 584px;
+  }
 }
 
 .week-goods__desc {

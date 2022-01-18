@@ -3,7 +3,7 @@
 }
 
 .catalog__list {
-  @include reset-list;
+  @include list-reset();
 }
 
 .catalog__image {
