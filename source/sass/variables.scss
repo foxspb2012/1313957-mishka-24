@@ -1,5 +1,13 @@
-// Template width
+// Viewpoints
 $mobile-width: 320px;
+$mobile-width-only: 769px;
+$tablet-width: 770px;
+$desktop-width: 1150px;
+
+//Template containers
+$mobile-width-wrapper: 480px;
+$tablet-width-wrapper: 940px;
+$desktop-width-wrapper: 1440px;
 
 // Template colors
 $color-white: #ffffff;
@@ -42,8 +50,3 @@ $interior-color: $main-color;
 $interior-color-hover: #59d5bc;
 $toy-color: $main-lightness;
 $toy-color-hover: #46c1ae;
-
-// Viewpoints
-$tablet-width: 770px;
-$desktop-width: 1150px;
-$mobile-width-only: 769px;

@@ -14,11 +14,21 @@
   @media (min-width: $tablet-width) {
     width: 50%;
   }
+
+  &--interior {
+    background-color: $interior-color;
+  }
+
+  &--toy {
+    background-color: $toy-color;
+  }
 }
 
 .promo-list__link {
   position: relative;
   display: block;
+  max-width: 320px;
+  margin: 0 auto;
   padding: 26px 30px 29px;
   font-size: 19px;
   font-weight: 700;
@@ -26,9 +36,14 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 28px 35px 31px;
     font-size: 20px;
     line-height: math.div(30, 20);
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 600px;
   }
 
   &::before {
@@ -49,7 +64,7 @@
   }
 
   &--interior {
-    background-color: $interior-color;
+    margin-left: auto;
 
     &::before {
       background-color: $main-color;
@@ -65,8 +80,6 @@
   }
 
   &--toy {
-    background-color: $toy-color;
-
     &::before {
       background-color: $main-lightness;
     }

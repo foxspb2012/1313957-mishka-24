@@ -2,11 +2,16 @@
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-  min-width: 320px;
-  max-width: 1150px;
+  min-width: 260px;
+  max-width: $mobile-width;
 
   @media (min-width: $tablet-width) {
     padding-left: 50px;
     padding-right: 50px;
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
   }
 }

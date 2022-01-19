@@ -10,7 +10,6 @@
 }
 
 .nav__logo-wrapper {
-  position: relative;
   display: flex;
   justify-content: center;
   padding: 22px 30px;
@@ -31,9 +30,9 @@
 }
 
 .nav__toggle {
-  position: absolute;
-  right: 30px;
-  top: 50%;
+  position: relative;
+  right: -77px;
+  top: 18px;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;

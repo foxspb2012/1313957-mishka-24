@@ -4,10 +4,19 @@
 
 .page__body {
   @include reset;
+  min-width: 320px;
   font-family: "Open Sans", "Verdana", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: math.div(20, 17);
   color: $font-color-base;
   background-color: $bg-color-body;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
 }
