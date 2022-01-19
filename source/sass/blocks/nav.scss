@@ -1,12 +1,137 @@
-.nav__wrapper {
-  font-weight: 700;
+.nav {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.nav__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 22px 30px;
+  border-bottom: 1px solid $border-color-gray;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding: 20px 50px;
+    background-color: $bg-color-body;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    order: 1;
+    padding: 6px 0 7px;
+  }
+}
+
+.nav__toggle {
+  position: relative;
+  right: -77px;
+  top: 18px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 3px;
+    background-color: $color-black;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &--off {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 2px;
+      box-shadow: 0 6px 0 0 $color-black, 0 12px 0 0 $color-black;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__list {
-  @include reset-list;
   font-weight: 700;
+
+  @include list-reset();
 }
 
 .nav__list li {
   padding: 28px 30px 28px 74px;
+}
+
+.nav__site-list {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+.nav__user-list {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.nav__market-list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    order: 3;
+  }
+}
+
+.nav__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 2;
+    margin: 0;
+    padding: 18px 50px;
+    font-size: 15px;
+    text-align: right;
+    width: 48%;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 4;
+    margin-left: auto;
+    width: 500px;
+  }
 }

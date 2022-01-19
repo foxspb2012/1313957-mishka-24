@@ -1,0 +1,111 @@
+.user-navigation {
+  font-weight: 700;
+
+  @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 398px;
+    border-bottom: 1px solid $color-separate;
+    background-color: $bg-color-body;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
+    width: 500px;
+  }
+
+  &--closed {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+}
+
+.user-navigation__item {
+  border-bottom: 1px solid $color-separate;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.user-navigation__link {
+  position: relative;
+  display: block;
+  max-width: $mobile-width;
+  margin: 0 auto;
+  padding: 27px 30px 27px 76px;
+  color: $font-color-menu;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  &[href]:hover {
+    color: $font-color-menu--hover;
+  }
+
+  &[href]:active {
+    color: $font-color-menu--active;
+  }
+
+  &--search {
+    @media (min-width: $tablet-width) {
+      padding: 44px 40px;
+      border-left: 1px solid $color-separate;
+      border-right: 1px solid $color-separate;
+    }
+  }
+
+  &--cart {
+    @media (min-width: $tablet-width) {
+      padding: 32px 50px 32px 84px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 32px 0 32px 84px;
+    }
+  }
+}
+
+.user-navigation__link-image {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: $bg-color-icon;
+
+  @media (min-width: $tablet-width) {
+    left: 32px;
+  }
+
+  .user-navigation__link:hover &,
+  .user-navigation__link:active & {
+    fill: $main-color;
+  }
+
+  .user-navigation__link:active & {
+    fill-opacity: 0.3;
+  }
+}
+
+.user-navigation__link-text {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}

@@ -1,3 +1,25 @@
 .social {
-  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $color-separate;
+
+  @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    width: 300px;
+    border-bottom: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 13px 0 6px;
+  width: 40px;
+  height: 40px;
 }
