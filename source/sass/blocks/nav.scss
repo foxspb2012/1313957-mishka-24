@@ -94,6 +94,7 @@
 .nav__site-list {
   @media (min-width: $tablet-width) {
     order: 1;
+    background-color: $bg-color-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,6 +114,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     order: 3;
+    background-color: $bg-color-grey;
   }
 }
 
@@ -126,6 +128,8 @@
     padding: 18px 50px;
     font-size: 15px;
     text-align: right;
+    color: $gray-dark;
+    background-color: $bg-color-grey;
     width: 48%;
   }
 
