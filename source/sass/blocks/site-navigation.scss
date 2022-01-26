@@ -1,4 +1,5 @@
 .site-navigation {
+  position: relative;
   font-weight: 700;
 
   @include list-reset();
@@ -22,7 +23,7 @@
     @media (min-width: $desktop-width) {
       content: "";
       position: absolute;
-      left: 0;
+      right: 500px;
       width: calc(50vw - 550px);
       height: 89px;
       background-color: $bg-color-body;
