@@ -18,6 +18,17 @@
     background-color: $bg-color-body;
   }
 
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: calc(50vw - 575px);
+      height: 89px;
+      background-color: $bg-color-body;
+    }
+  }
+
   &--closed {
     display: none;
 
