@@ -41,7 +41,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
-    line-height: 57px;
+    line-height: math.div(57, 53);
   }
 }
 

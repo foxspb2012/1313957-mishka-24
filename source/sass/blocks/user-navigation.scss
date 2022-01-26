@@ -1,4 +1,5 @@
 .user-navigation {
+  position: relative;
   font-weight: 700;
 
   @include list-reset();
@@ -15,6 +16,17 @@
   @media (min-width: $desktop-width) {
     padding-right: 50px;
     width: 500px;
+  }
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      left: 500px;
+      width: calc(50vw - 500px);
+      height: 89px;
+      background-color: $bg-color-body;
+    }
   }
 
   &--closed {

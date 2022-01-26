@@ -1,3 +1,17 @@
 .header {
   background-color: $bg-color-body;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg-color-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+  }
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      background-color: $color-background;
+    }
+  }
 }

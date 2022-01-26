@@ -2,4 +2,19 @@
   padding-top: 71px;
   padding-bottom: 76px;
   background-color: $bg-color-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+    padding-bottom: 102px;
+  }
+}
+
+.main__title {
+  margin: 0;
+  text-align: center;
 }

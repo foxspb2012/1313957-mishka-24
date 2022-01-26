@@ -55,7 +55,7 @@
     margin-top: 5px;
     margin-bottom: 0;
     max-width: 127px;
-    line-height: 17px;
+    line-height: math.div(17, 17);
     text-align: center;
   }
 

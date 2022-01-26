@@ -1,4 +1,5 @@
 .site-navigation {
+  position: relative;
   font-weight: 700;
 
   @include list-reset();
@@ -16,6 +17,17 @@
     border-bottom: 1px solid $color-separate;
     font-size: 17px;
     background-color: $bg-color-body;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      right: 500px;
+      width: calc(50vw - 550px);
+      height: 89px;
+      background-color: $bg-color-body;
+    }
   }
 
   &--closed {

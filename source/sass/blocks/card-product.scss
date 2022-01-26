@@ -1,3 +1,20 @@
+.card-product {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  margin: 0 auto 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    margin: 0 0 54px;
+  }
+}
+
 .card-product__desc {
   font-size: 15px;
   color: $font-color-button;
@@ -10,7 +27,123 @@
   line-height: math.div(24, 20);
 }
 
+.card-product__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-product__link-image {
+  display: block;
+  overflow: hidden;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.card-product__description {
+  margin-top: 0;
+  margin-bottom: 19px;
+  font-size: 13px;
+  line-height: math.div(30, 13);
+  color: $gray-dark;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+}
+
+.card-product__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0 16px;
+  border-top: 1px solid $color-separate;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+    padding: 22px 4px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 5px 17px 0;
+  }
+}
+
+.card-product__image {
+  display: block;
+  width: 260px;
+  height: 195px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.card-product__description-wrapper {
+  box-sizing: border-box;
+  padding: 26px 27px 11px;
+  width: 260px;
+  border: 1px solid $color-separate;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 9px;
+    width: 100%;
+    min-height: 197px;
+  }
+}
+
+.card-product__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 700;
+  color: $font-color-base;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
 .card-product__price {
+  margin: 0;
   font-weight: 700;
   line-height: math.div(24, 17);
+  color: $font-color-base;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.card-product__button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.card-product__button-image {
+  overflow-x: hidden;
+  width: 20px;
+  height: 18px;
+  fill: $bg-color-icon;
 }
