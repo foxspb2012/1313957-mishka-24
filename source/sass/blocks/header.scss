@@ -8,4 +8,10 @@
   @media (min-width: $desktop-width) {
     overflow: hidden;
   }
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      background-color: $color-background;
+    }
+  }
 }
