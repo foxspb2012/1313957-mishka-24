@@ -1,18 +1,44 @@
 .nav {
   margin: 0 auto;
   min-width: 320px;
-  max-width: 1150px;
 
   @media (min-width: $tablet-width) {
+    width: 770px;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+  }
+}
+
+.nav__logo {
+
+  position: relative;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      top: -20px;
+      position: absolute;
+      right: 135px;
+      width: calc(50vw - 383px);
+      height: 89px;
+      background-color: $bg-color-body;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: none;
+    }
   }
 }
 
 .nav__logo-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
-  padding: 22px 30px;
+  padding: 22px 30px 20px;
   border-bottom: 1px solid $border-color-gray;
 
   @media (min-width: $tablet-width) {
@@ -23,16 +49,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-grow: 0;
-    order: 1;
+    order: 2;
     padding: 6px 0 7px;
   }
 }
 
+.nav--no-js .nav__toggle {
+  display: none;
+}
+
 .nav__toggle {
   position: relative;
-  right: -77px;
-  top: 18px;
+  left: 76px;
+  top: 20px;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
@@ -47,7 +76,7 @@
     top: 50%;
     left: 50%;
     width: 28px;
-    height: 3px;
+    height: 2px;
     background-color: $color-black;
   }
 
@@ -123,7 +152,7 @@
     display: block;
     order: 2;
     margin: 0;
-    padding: 18px 50px;
+    padding: 24px 52px;
     font-size: 15px;
     text-align: right;
     color: $gray-dark;

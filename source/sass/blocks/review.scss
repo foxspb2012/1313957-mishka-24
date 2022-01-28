@@ -1,7 +1,26 @@
 .review {
   position: relative;
-  padding-top: 17px;
+  padding-top: 15px;
   padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 127px;
+    background-image: url("../img/review@1x.jpg");
+    background-size: image-size("../img/review@1x.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-left: 225px;
+    padding-bottom: 183px;
+    background-position-x: 50px;
+  }
 }
 
 .review__header {
@@ -9,9 +28,13 @@
   margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 16px;
-    margin-bottom: 28px;
+    margin-top: 22px;
+    margin-bottom: 18px;
     max-width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
   }
 }
 
@@ -27,6 +50,7 @@
 }
 
 .review__text {
+  margin-top: 6px;
   margin-bottom: 33px;
   font-size: 15px;
   line-height: math.div(30, 15);
@@ -36,17 +60,30 @@
     margin-top: 18px;
     margin-bottom: 58px;
     font-size: 17px;
+    line-height: math.div(30, 17);
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 38px;
-    max-width: 790px;
+    margin-top: 4px;
+    margin-bottom: 47px;
+    max-width: 810px;
   }
 }
 
 .review__author p {
-  margin: 0;
+  margin: 0 0 5px 0;
+  font-weight: 700;
   line-height: math.div(24, 17);
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: math.div(24, 18);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: math.div(24, 17);
+  }
 }
 
 .review__author span {

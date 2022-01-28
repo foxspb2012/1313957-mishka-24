@@ -58,12 +58,12 @@
   display: block;
   max-width: $mobile-width;
   margin: 0 auto;
-  padding: 27px 30px 27px 76px;
+  padding: 30px 30px 27px 76px;
   color: $font-color-menu;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding: 18px 37px 18px 0;
+    padding: 26px 37px 18px 0;
     border-bottom: none;
   }
 

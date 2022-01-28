@@ -20,3 +20,10 @@
     min-width: 1200px;
   }
 }
+
+.page__popup {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+}

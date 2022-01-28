@@ -1,15 +1,14 @@
 .about-us {
-  padding-top: 25px;
+  padding-top: 34px;
   padding-bottom: 6px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 32px;
     padding-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 225px;
-    padding-top: 32px;
-    padding-bottom: 30px;
+    padding: 40px 220px 30px 225px;
   }
 }
 
@@ -42,8 +41,106 @@
 .about-us__item {
   position: relative;
   width: 260px;
-  padding-top: 54px;
-  padding-bottom: 29px;
+  padding-top: 50px;
+  padding-bottom: 33px;
   font-weight: 700;
   line-height: math.div(20, 17);
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+    font-size: 20px;
+    line-height: math.div(22, 20);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  &--eco {
+    &::before {
+      left: 10px;
+      top: -6px;
+      width: 32px;
+      height: 37px;
+      background-image: url("../img/icon-eco.svg");
+      background-size: 32px 37px;
+    }
+  }
+
+  &--hand-made {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+
+    &::before {
+      left: 2px;
+      top: -4px;
+      width: 34px;
+      height: 34px;
+      background-image: url("../img/icon-hand-made.svg");
+      background-size: 34px 34px;
+    }
+  }
+
+  &--scand-style {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+
+    &::before {
+      left: 3px;
+      top: -4px;
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-scand-style.svg");
+      background-size: 47px 27px;
+    }
+  }
+
+  &--patriot {
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+
+    &::before {
+      left: -7px;
+      top: -2px;
+      width: 54px;
+      height: 23px;
+      background-image: url("../img/icon-patriot.svg");
+      background-size: 54px 23px;
+    }
+  }
+
+  &--likes {
+    @media (min-width: $tablet-width) {
+      order: 5;
+    }
+
+    &::before {
+      left: 9px;
+      top: 1px;
+      width: 33px;
+      height: 28px;
+      background-image: url("../img/icon-feature-heart.svg");
+      background-size: 33px 28px;
+    }
+  }
+
+  &--present-pack {
+    @media (min-width: $tablet-width) {
+      order: 6;
+    }
+
+    &::before {
+      left: 1px;
+      top: -3px;
+      width: 33px;
+      height: 32px;
+      background-image: url("../img/icon-present-pack.svg");
+      background-size: 33px 32px;
+    }
+  }
 }
