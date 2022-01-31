@@ -1,12 +1,14 @@
 .user-navigation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   position: relative;
   font-weight: 700;
 
   @include list-reset();
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: flex-end;
     width: 398px;
     border-bottom: 1px solid $color-separate;
