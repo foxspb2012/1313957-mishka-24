@@ -38,7 +38,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 22px 30px 20px;
+  padding: 22px 12px 19px 30px;
   border-bottom: 1px solid $border-color-gray;
 
   @media (min-width: $tablet-width) {
@@ -60,9 +60,9 @@
 
 .nav__toggle {
   position: relative;
-  left: 76px;
+  left: 68px;
   top: 20px;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
   width: 20px;
   height: 20px;
   padding: 0;
