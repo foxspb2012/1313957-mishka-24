@@ -4,7 +4,7 @@
   background-color: $bg-color-grey;
 
   @media (min-width: $tablet-width) {
-    padding-top: 48px;
+    padding-top: 45px;
     padding-bottom: 46px;
   }
 }
@@ -22,7 +22,20 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-right: 83px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-logo__image {
+  width: 102px;
+  height: 34px;
+
+  .footer-logo[href]:hover &,
+  .footer-logo[href]:active & {
+    fill: $toy-color-hover;
   }
 }
 

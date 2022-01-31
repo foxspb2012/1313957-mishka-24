@@ -8,13 +8,13 @@
 </head>
 <body class="page__body">
 <header class="header header--index">
-  <nav class="nav">
+  <nav class="nav nav--no-js">
     <div class="nav__logo-wrapper">
       <a href="#" class="nav__logo logo">
         <img class="nav__logo-image" src="img/logo-mobile.svg" width="86" height="35"
               alt="Интернет-магазин «Мишка».">
       </a>
-      <button class="nav__toggle nav__toggle">
+      <button class="nav__toggle nav__toggle--off" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
@@ -64,7 +64,7 @@
   <h1 class="visually-hidden">Мишка — интернет-магазин игрушек ручной работы</h1>
   <section class="promo">
     <div class="promo__content-wrapper wrapper">
-      <h2 class="promo__header section-header section-header--main">Милые штуки ручной работы&nbsp;для дома</h2>
+      <h2 class="promo__header section-header section-header--main">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
       <ul class="promo__list promo-list">
         <li class="promo-list__item promo-list__item--interior">
           <a class="promo-list__link  promo-list__link--interior" href="#">
@@ -89,14 +89,22 @@
       <div class="week-goods__content">
         <div class="week-goods__desc">
           <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-          <dl class="week-goods__list">
-            <dt>Цвет:</dt>
-            <dd>тиффани/серый</dd>
-            <dt>Диаметр:</dt>
-            <dd>25 см</dd>
-            <dt>Высота:</dt>
-            <dd>15 см</dd>
-          </dl>
+          <table class="week-goods__table table-desc">
+            <tbody>
+            <tr class="table-desc__row">
+              <td class="table-desc__cell">Цвет:</td>
+              <td class="table-desc__cell">тиффани/серый</td>
+            </tr>
+            <tr class="table-desc__row">
+              <td class="table-desc__cell">Диаметр:</td>
+              <td class="table-desc__cell">25 см</td>
+            </tr>
+            <tr class="table-desc__row">
+              <td class="table-desc__cell">Высота:</td>
+              <td class="table-desc__cell">15 см</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
 
         <div class="week-goods__img-wrapper">
@@ -113,36 +121,39 @@
   <section class="about-us wrapper">
     <h2 class="about-us__header section-header">Коротко о нас:</h2>
     <ul class="about-us__list">
-      <li class="about-us__item about-us__item--eco">Экологически чистые материалы</li>
-      <li class="about-us__item about-us__item--scand-style">Скандинавский стиль по российской цене</li>
-      <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
-      <li class="about-us__item about-us__item--hand-made">Связано вручную с любовью и умилением</li>
-      <li class="about-us__item about-us__item--patriot">Поддержка отечественного производителя</li>
-      <li class="about-us__item about-us__item--present-pack">Поставляется в подарочной упаковке</li>
+      <li class="about-us__item about-us__item--eco">Экологически чистые&nbsp;материалы</li>
+      <li class="about-us__item about-us__item--scand-style">Скандинавский стиль по&nbsp;российской цене</li>
+      <li class="about-us__item about-us__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+      <li class="about-us__item about-us__item--hand-made">Связано вручную с&nbsp;любовью&nbsp;и&nbsp;умилением</li>
+      <li class="about-us__item about-us__item--patriot">Поддержка&nbsp;отечественного производителя</li>
+      <li class="about-us__item about-us__item--present-pack">Поставляется в&nbsp;подарочной&nbsp;упаковке</li>
     </ul>
   </section>
   <section class="review wrapper">
     <h2 class="review__header section-header">Отзывы</h2>
     <div class="review__content">
       <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко
-        такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-        и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке,
+        и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
       <div class="review__author">
-        <p>Анастасия Красильникова</p>
-        <span>@misssssiskras</span>
+        <div class="review__author-text">
+          <p>Анастасия Красильникова</p>
+          <span>@misssssiskras</span>
+        </div>
+        <div class="review__author-buttons">
+          <button class="review__nav-button review__nav-button--backward">
+            <span class="visually-hidden">Кнопка переключения назад.</span>
+          </button>
+          <button class="review__nav-button review__nav-button--forward">
+            <span class="visually-hidden">Кнопка переключения вперед.</span>
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="review__nav-buttons">
-      <button class="review__nav-button review__nav-button--backward">
-        <span class="visually-hidden">Кнопка переключения назад.</span>
-      </button>
-      <button class="review__nav-button review__nav-button--forward">
-        <span class="visually-hidden">Кнопка переключения вперед.</span>
-      </button>
+
     </div>
     <a class="review__button button" href="#">Написать</a>
   </section>
-  <section class="contacts wrapper">
+  <section class="contacts">
     <div class="contacts__wrapper wrapper">
       <h2 class="contacts__header section-header">Контакты</h2>
       <dl class="contacts__table">
@@ -154,9 +165,13 @@
         <dd class="contacts__desc">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</dd>
       </dl>
     </div>
-    <div class="contacts__map map">
+    <div class="contacts__map map wrapper">
       <img class="map__image" src="img/map-mobile.png" width="320" height="455"
             alt="Адрес офиса г.Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101.">
+
+      <div class="map__marker"></div>
+
+      <div class="map__interactive" id="map"></div>
     </div>
     <div class="contacts__button-wrapper wrapper">
       <a href="#" class="contacts__button button">Напишите нам</a>
@@ -215,28 +230,27 @@
   </div>
 </footer>
 
-<section class="popup">
-  <form class="popup__form" action="#">
-    <h2 class="popup__header section-header section-header--popup">Добавить в корзину</h2>
-    <fieldset class="popup__fieldset">
-      <legend class="popup__legend">Выберите размер:</legend>
-      <ul class="popup__list">
-        <li class="popup__item">
-          <input type="radio" class="visually-hidden" id="s" name="size" value="s" checked>
-          <label for="s">S</label>
-        </li>
-        <li class="popup__item">
-          <input type="radio" class="visually-hidden" id="m" name="size" value="m">
-          <label for="m">M</label>
-        </li>
-        <li class="popup__item">
-          <input type="radio" class="visually-hidden" id="l" name="size" value="l">
-          <label for="l">L</label>
-        </li>
-      </ul>
+<section class="popup page__popup">
+  <form class="form-order popup__form-order" action="https://echo.htmlacademy.ru" method="POST">
+    <h2 class="form-order__title">Добавить в корзину</h2>
+
+    <fieldset class="form-order__fieldset">
+      <legend class="form-order__legend">Выберите размер:</legend>
+
+      <div class="form-order__input-wrapper">
+        <input class="form-order__radio visually-hidden" type="radio" id="size-s" name="size" value="s" checked>
+        <label class="form-order__label" for="size-s">S</label>
+        <input class="form-order__radio visually-hidden" type="radio" id="size-m" name="size" value="m">
+        <label class="form-order__label" for="size-m">M</label>
+        <input class="form-order__radio visually-hidden" type="radio" id="size-l" name="size" value="l">
+        <label class="form-order__label" for="size-l">L</label>
+      </div>
     </fieldset>
-    <button class="popup__button button button--popup" type="button">Добавить</button>
+
+    <button class="form-order__button button button--green" type="submit">Добавить</button>
   </form>
 </section>
+<script src="js/script.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script>
 </body>
 </html>

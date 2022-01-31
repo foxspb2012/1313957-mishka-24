@@ -3,7 +3,6 @@
   font-size: 25px;
   font-weight: 700;
   line-height: math.div(30, 25);
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -11,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 57px;
+    font-size: 53px;
     line-height: math.div(57, 53);
   }
 
