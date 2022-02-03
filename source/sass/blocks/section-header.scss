@@ -4,22 +4,12 @@
   font-weight: 700;
   line-height: math.div(30, 25);
 
-  @media (min-width: $tablet-width) {
-    font-size: 43px;
-    line-height: math.div(50, 43);
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 53px;
-    line-height: math.div(57, 53);
-  }
-
-  &--main {
-    font-size: 27px;
-    font-weight: 700;
-    line-height: math.div(30, 27);
-    text-align: center;
-  }
+  //&--main {
+  //  font-size: 27px;
+  //  font-weight: 700;
+  //  line-height: math.div(30, 27);
+  //  text-align: center;
+  //}
 
   &--popup {
     margin-top: 28px;

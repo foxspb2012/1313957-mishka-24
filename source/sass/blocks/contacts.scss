@@ -157,3 +157,24 @@
     width: 230px;
   }
 }
+
+.contacts__mail-link {
+  padding-bottom: 4px;
+  border-bottom: 1px solid $main-light;
+  line-height: 30px;
+  color: $gray-dark;
+
+  &:hover {
+    color: $mail-link--hover;
+    border-bottom-color: $mail-link--hover;
+  }
+
+  &:active {
+    color: $mail-link--hover;
+    border-bottom-color: $mail-link--active;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
+  }
+}

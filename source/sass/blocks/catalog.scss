@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 30px;
+  margin-top: 30px;
   display: grid;
   grid-template-areas: "catalog-wrapper" "catalog__video";
 }
@@ -15,11 +15,11 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 129px;
+    padding-top: 90px;
     padding-bottom: 3px;
   }
 }
@@ -47,4 +47,12 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 104px;
   }
+}
+
+.card-product:hover .card-product__description-wrapper {
+  box-shadow: 0 6px 10px $card-product-color;
+}
+
+.card-product:active .card-product__description-wrapper {
+  box-shadow: 0 3px 5px $card-product-color;
 }

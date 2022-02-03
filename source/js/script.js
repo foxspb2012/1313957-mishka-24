@@ -24,7 +24,7 @@ if (toggleButton) {
 
 // Модальное окно заказа товара
 const popup = document.querySelector('.popup');
-const orderButton = document.querySelector('.week-goods__button');
+const orderButton = document.getElementById('order-button');
 
 if (popup) {
   if (orderButton) {
@@ -38,7 +38,7 @@ function openPopupForm(event) {
   let element = event.target;
 
   if (
-    element.classList.contains('card-product__button') ||
+    element.classList.contains('video__button') ||
     element.classList.contains('week-goods__button')
   ) {
     event.preventDefault();

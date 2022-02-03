@@ -11,6 +11,31 @@
     padding-top: 120px;
     padding-bottom: 60px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    background-image: url("../img/zigzag-line.svg");
+    background-size: 320px 7px;
+    background-position-x: -8px;
+    background-repeat: repeat-x;
+
+    @media (min-width: $tablet-width) {
+      height: 17px;
+      background-size: 768px 17px;
+      background-position-x: -20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      background-size: auto 21px;
+      background-position-x: -25px;
+    }
+  }
 }
 
 .week-goods__caption {

@@ -1,6 +1,6 @@
 .video {
   position: relative;
-  padding-top: 20px;
+  padding-top: 17px;
   border: 1px solid $border-color-gray;
 
   @media (min-width: $tablet-width) {
@@ -18,8 +18,9 @@
   position: relative;
   margin-top: 4px;
   margin-bottom: 24px;
-  padding-left: 89px;
+  padding-left: 90px;
   font-size: 17px;
+  line-height: math.div(24, 17);
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
@@ -28,14 +29,35 @@
     margin-bottom: 5px;
     padding-left: 106px;
     font-size: 20px;
+    line-height: math.div(24, 20);
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 79px;
-    padding-top: 38px;
-    padding-right: 57px;
+    padding: 40px 57px 6px 79px;
     margin-top: 57px;
     margin-bottom: 6px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 33px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+
+    @media (min-width: $tablet-width) {
+      left: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 79px;
+      top: 0;
+    }
   }
 }
 
@@ -70,8 +92,36 @@
   background-repeat: no-repeat;
 }
 
+.video__button {
+  @media (min-width: $tablet-width) {
+    max-width: 584px;
+  }
+}
+
+.video__play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 101px;
+  height: 77px;
+  border: 0;
+  background-image: url("../img/icon-play.svg");
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.8;
+  }
+}
+
 .video__description-wrapper {
-  padding: 14px 34px 32px;
+  padding: 13px 30px 32px 35px;
 
   @media (min-width: $tablet-width) {
     padding: 14px 40px 45px;
@@ -84,11 +134,17 @@
 }
 
 .video__description {
-  margin: 13px 0;
+  margin: 25px 0 40px 0;
   font-size: 13px;
+  line-height: math.div(24, 13);
 
   @media (min-width: $tablet-width) {
+    margin-top: 2px;
     font-size: 15px;
     line-height: math.div(30, 15);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }

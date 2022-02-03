@@ -5,16 +5,51 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 36px;
-    padding-bottom: 79px;
+    padding-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 34px;
     padding-bottom: 102px;
   }
+
+  &::after {
+    content: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url("../img/zigzag-fill.svg");
+    background-repeat: repeat-x;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      bottom: 810px;
+      height: 24px;
+      background-size: auto 24px;
+      background-position-x: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 780px;
+      height: 34px;
+      background-size: auto 34px;
+    }
+  }
 }
 
 .main__title {
   margin: 0;
   text-align: center;
+  font-size: 27px;
+  line-height: math.div(30, 27);
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: math.div(50, 43);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: math.div(57, 53);
+  }
 }

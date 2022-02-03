@@ -8,15 +8,15 @@
 </head>
 <body class="page__body">
 <header class="header">
-  <nav class="nav">
+  <nav class="nav nav--no-js">
     <div class="nav__logo-wrapper">
-    <a href="index.html" class="nav__logo logo">
-      <img class="nav__logo-image" src="img/logo-mobile.svg" width="86" height="35"
-            alt="Интернет-магазин «Мишка».">
-    </a>
-    <button class="nav__toggle nav__toggle">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+      <a href="index.html" class="nav__logo logo">
+        <img class="nav__logo-image" src="img/logo-mobile.svg" width="86" height="35"
+              alt="Интернет-магазин «Мишка».">
+      </a>
+      <button class="nav__toggle nav__toggle--off" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
     <ul class="nav__site-list site-navigation">
       <li class="site-navigation__item">
@@ -63,98 +63,143 @@
 <main class="main">
   <div class="main__header">
     <div class="wrapper">
-      <h1 class="main__title section-header">Вязание на заказ</h1>
+      <h1 class="main__title">Вязание на заказ</h1>
     </div>
   </div>
-  <form class="form" method="post" action="https://echo.htmlacademy.ru" name="form-order" autocomplete="off">
-    <p class="form__desc wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
-      уточнить детали.</p>
-    <div class="form__block-wrapper">
+  <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <p class="form__desc wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
+      простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <div class="form__block-wrapper wrapper">
       <fieldset class="form__fieldset form__fieldset--type wrapper">
-        <legend class="form__legend form__legend--title">Тип</legend>
-        <ul class="form__list form__list--type">
-          <li class="form__item form__item--type">
-            <label class="form__label">Аксессуар для интерьера<input class="form__input-radio" type="radio" name="type" value="1" checked></label>
-          </li>
-          <li class="form__item form__item--type">
-            <label class="form__label">Детская игрушка<input class="form__input-radio" type="radio" name="type" value="2"></label>
-          </li>
-        </ul>
+        <legend class="form__legend">
+          <span class="form__legend-text">Тип</span>
+        </legend>
+
+        <div class="form__content-wrapper form__content-wrapper--type">
+          <p class="form__input-wrapper form__input-wrapper--type">
+            <input class="form__radio visually-hidden" type="radio" id="interior" name="type" value="1" checked>
+            <label class="form__label-radio" for="interior">Аксессуар для интерьера</label>
+          </p>
+
+          <p class="form__input-wrapper form__input-wrapper--type">
+            <input class="form__radio visually-hidden" type="radio" id="toy" value="2" name="type">
+            <label class="form__label-radio" for="toy">Детская игрушка</label>
+          </p>
+        </div>
       </fieldset>
     </div>
 
     <div class="form__block-wrapper form__block-wrapper--gray">
       <fieldset class="form__fieldset form__fieldset--color wrapper">
-        <legend class="form__legend form__legend--title">Цвет</legend>
-        <ul class="form__list form__list--color">
-          <li class="form__item form__item--color">
-            <label class="form__label">Белый<input class="form__input-checkbox" type="checkbox" name="color" value="white" checked></label>
-          </li>
-          <li class="form__item form__item--color">
-            <label class="form__label">Серый<input class="form__input-checkbox" type="checkbox" name="color" value="gray" checked></label>
-          </li>
-          <li class="form__item form__item--color">
-            <label class="form__label">Тиффани<input class="form__input-checkbox" type="checkbox" name="color" value="tiffany"></label>
-          </li>
-          <li class="form__item form__item--color">
-            <label class="form__label">Черный<input class="form__input-checkbox" type="checkbox" name="color" value="black"></label>
-          </li>
-          <li class="form__item form__item--color">
-            <label class="form__label">Розовый<input class="form__input-checkbox" type="checkbox" name="color" value="pink"></label>
-          </li>
-          <li class="form__item form__item--color">
-            <label class="form__label">Оранжевый<input class="form__input-checkbox" type="checkbox" name="color" value="orange"></label>
-          </li>
-        </ul>
+        <legend class="form__legend form__legend--wrapper-gray">
+          <span class="form__legend-text">Цвет</span>
+        </legend>
+
+        <div class="form__content-wrapper form__content-wrapper--color">
+          <p class="form__input-wrapper form__input-wrapper--color">
+            <input class="form__checkbox visually-hidden" type="checkbox" id="color-white" name="color-white" checked>
+            <label class="form__label-checkbox" for="color-white">Белый</label>
+          </p>
+
+          <p class="form__input-wrapper form__input-wrapper--color">
+            <input class="form__checkbox visually-hidden" type="checkbox" id="color-gray" name="color-gray" checked>
+            <label class="form__label-checkbox" for="color-gray">Серый</label>
+          </p>
+
+          <p class="form__input-wrapper form__input-wrapper--color">
+            <input class="form__checkbox visually-hidden" type="checkbox" id="color-tiffany" name="color-tiffany">
+            <label class="form__label-checkbox" for="color-tiffany">Тиффани</label>
+          </p>
+
+          <p class="form__input-wrapper form__input-wrapper--color">
+            <input class="form__checkbox visually-hidden" type="checkbox" id="color-black" name="color-black">
+            <label class="form__label-checkbox" for="color-black">Черный</label>
+          </p>
+
+          <p class="form__input-wrapper form__input-wrapper--color">
+            <input class="form__checkbox visually-hidden" type="checkbox" id="color-pink" name="color-pink">
+            <label class="form__label-checkbox" for="color-pink">Розовый</label>
+          </p>
+
+          <p class="form__input-wrapper form__input-wrapper--color">
+            <input class="form__checkbox visually-hidden" type="checkbox" id="color-orange" name="color-orange">
+            <label class="form__label-checkbox" for="color-orange">Оранжевый</label>
+          </p>
+        </div>
       </fieldset>
     </div>
 
-    <div class="form__block-wrapper">
-      <fieldset class="form__fieldset form__fieldset--name wrapper">
-        <legend class="form__legend form__legend--title">ФИО</legend>
-        <ul class="form__list">
-          <li class="form__item form__item--name">
-            <label class="form__label">Имя<input class="form__input-text" type="text" name="first-name" placeholder="Введите ваше имя*" required></label>
-          </li>
-          <li class="form__item form__item--name">
-            <label class="form__label">Фамилия<input class="form__input-text" type="text" name="last-name" placeholder="Укажите фамилию*" required></label>
-          </li>
-          <li class="form__item form__item--name">
-            <label class="form__label">Отчество<input class="form__input-text" type="text" name="patronymic" placeholder="Отчество, если желаете"></label>
-          </li>
-        </ul>
+    <div class="form__block-wrapper wrapper">
+      <fieldset class="form__fieldset form__fieldset--name">
+        <legend class="form__legend">
+          <span class="form__legend-text">ФИО</span>
+        </legend>
+
+        <div class="form__content-wrapper">
+          <p class="form__input-wrapper form__input-wrapper--name">
+            <label class="form__label" for="firstname">Имя:</label>
+            <input class="form__input-text" type="text" id="firstname" name="firstname" placeholder="Введите ваше имя*">
+          </p>
+
+          <p class="form__input-wrapper form__input-wrapper--name">
+            <label class="form__label" for="lastname">Фамилия:</label>
+            <input class="form__input-text" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию*">
+          </p>
+
+          <p class="form__input-wrapper form__input-wrapper--name">
+            <label class="form__label" for="middlename">Отчество:</label>
+            <input class="form__input-text" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
+          </p>
+        </div>
       </fieldset>
     </div>
 
     <div class="form__block-wrapper form__block-wrapper--gray">
-      <fieldset class="form__fieldset form__fieldset--contacts wrapper">
-        <legend class="visually-hidden">Контактные данные</legend>
-        <ul class="form__list">
-          <li class="form__item">
-            <label class="form__label form__label--phone">Тел
-              <input class="form__input-contacts form__input-text" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            </label>
-          </li>
-          <li class="form__item">
-            <label class="form__label form__label--email">
-              E-mail
-              <input class="form__input-contacts form__input-text" type="email" name="email" placeholder="Ваш Email*" required>
-            </label>
-          </li>
-        </ul>
+      <fieldset class="form__fieldset form__fieldset--contact wrapper">
+        <div class="form__content-wrapper form__content-wrapper--contacts">
+          <label class="form__legend form__legend--phone form__legend--wrapper-gray" for="phone">
+            <span class="form__legend-text">Тел</span>
+          </label>
+          <p class="form__input-wrapper form__input-wrapper--contact">
+            <input class="form__input-text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <svg class="form__input-image form__input-image--phone" width="25" height="24">
+              <g>
+                <path d="M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z" fill="black"/>
+                <path d="M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4557 0 12.6008 0V1.48147Z" fill="black"/>
+                <path d="M12.6008 9.18506V10.7653C13.4073 10.7653 14.0121 11.3579 14.0121 12.148H15.625C15.625 10.5678 14.3145 9.18506 12.6008 9.18506Z" fill="black"/>
+                <path d="M12.6008 6.12356C15.9274 6.12356 18.75 8.79021 18.75 12.1482H20.3629C20.3629 8.00009 16.9355 4.64209 12.7016 4.64209V6.12356H12.6008Z" fill="black"/>
+              </g>
+            </svg>
+          </p>
+
+          <label class="form__legend form__legend--email form__legend--wrapper-gray" for="email">
+            <span class="form__legend-text">E-mail</span>
+          </label>
+          <p class="form__input-wrapper form__input-wrapper--contact">
+            <input class="form__input-text" type="email" id="email" name="email" placeholder="Ваш Email*">
+            <svg class="form__input-image form__input-image--email" width="32" height="32">
+                <path d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z" fill="black"/>
+            </svg>
+          </p>
+        </div>
       </fieldset>
     </div>
 
-    <div class="form__block-wrapper">
-      <fieldset class="form__fieldset form__fieldset--description wrapper">
-        <legend class="form__legend form__legend--title">Доп</legend>
-        <div class="form__list">
-          <textarea class="form__textarea form__input-text" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+    <div class="form__block-wrapper wrapper">
+      <fieldset class="form__fieldset form__fieldset--message">
+        <legend class="form__legend">
+          <span class="form__legend-text">Доп</span>
+        </legend>
+
+        <div class="form__content-wrapper form__content-wrapper--message">
+          <textarea class="form__input-text form__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
       </fieldset>
-      <div class="form__submit wrapper">
+
+      <div class="form__submit-wrapper">
         <p class="form__notification">*Поля обязательны для заполнения</p>
-        <button class="form__data-button button" type="submit">Отправить заказ</button>
+
+        <button class="form__button button" type="submit">Отправить заказ</button>
       </div>
     </div>
   </form>
@@ -210,3 +255,6 @@
     </div>
   </div>
 </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
