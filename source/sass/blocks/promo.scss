@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   background-color: $bg-color-image;
@@ -11,14 +12,14 @@
       right: 0;
       background-image: url("../img/zigzag-fill.svg");
       background-repeat: repeat-x;
-      bottom: 400px;
+      bottom: -12px;
       height: 24px;
       background-size: 768px 24px;
       background-position-x: 0;
     }
 
     @media (min-width: $desktop-width) {
-      bottom: 391px;
+      bottom: -17px;
       height: 34px;
       background-size: auto 37px;
       background-position-x: 12px;
